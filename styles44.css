@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "times-roman", sans-serif;
+  background: #65CBC1;
+}
+
+/*Para Smartphones*/
+header {
+  background-color: #97E3DB;
+  color: #3069CF;
+  padding: 10px;
+  text-align: center;
+
+}
+header h1{
+  margin: 0;
+}
+
+header img{
+  width: 20%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+#imagen{
+  display: none;
+}
+
+nav li {
+  display: block;
+  padding: 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #3069CF;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav li:hover {
+  background-color: #0099cc;
+}
+
+section{
+  margin-top: 20px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  text-align: center;
+}
+
+article{
+  margin-bottom: 20px;
+  height: 450px;
+  border: 5px solid #2856AF;
+  background-color: #94B0E7;
+  display: block;
+}
+
+article img{
+  width: 70%;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #97E3DB;
+  color: #3069CF;
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+}
+
+footer img{
+  width: 15%;
+}
+
+/*Para tablets*/
+@media only screen and (min-width: 768px) {
+
+  header {
+    font-size: 1.2em;
+  }
+  header h1{
+    margin: 20px;
+  }
+  header img{
+    width: 10%;
+    float: right;
+  }
+  section{
+    width: 95%;
+    display: flex;
+  }
+  article{
+    height: 400px;
+    margin-left: 15px;
+  }
+  footer{
+    font-size: 1.5em;
+  }
+  footer p{
+    margin: 0;
+  }
+  footer img{
+    width: 18%;
+  }
+}
+/*Para ordedanadores de sobremesa*/
+@media only screen and (min-width: 1200px) {
+    header {
+      font-size: 2em;
+    }
+    header img{
+      width: 11%;
+      float: right;
+    }
+
+    nav ul{
+      display: block;
+      float: right;
+      width: 20%;
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+
+    nav li {
+      padding: 20px;
+      padding-bottom: 40px;
+      margin: 0;
+    }
+    #imagen{
+      display: block;
+      float: right;
+      clear: right;
+      margin-right: 15px;
+      margin-top: 10px;
+      width: 20%;
+    }
+    section{
+      width: 75%;
+      display: flex;
+      margin-left: 0;
+    }
+    article{
+      height: 400px;
+      margin-left: 15px;
+    }
+    footer{
+      font-size: 1.5em;
+    }
+    footer img{
+      width: 8%;
+    }
+}
