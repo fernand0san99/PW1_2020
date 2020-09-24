@@ -1,0 +1,122 @@
+
+
+
+.contenedor{
+  border: 2px solid #046471;
+  background-color: #36CDE1;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+
+.box1{
+  border: 2px solid #084D0D;
+  background-color: #2E9736;
+  width: 96px;
+  height: 396px;
+}
+
+.box2{
+  border: 2px solid #045B4E;
+  background-color: #0FE2C2;
+  width: 96px;
+  height: 96px;
+}
+
+.box3{
+  border: 2px solid #063B64;
+  background-color: #0F85E2;
+  width: 96px;
+  height: 296px;
+}
+
+.box4{
+  border: 2px solid #1E0664;
+  background-color: #4F1DDE;
+  width: 96px;
+  height: 146px;
+}
+
+.position > .box1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.position > .box2{
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+
+.position > .box3{
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+
+.position > .box4{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.float > .box1{
+	float: left;
+}
+
+.float > .box2{
+	float: left;
+}
+
+.float > .box3{
+	float: left;
+	margin-top: 50px;
+}
+
+.float > .box4{
+	float: right;
+	margin-top: 250px;
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.flexbox .box3{
+	align-self: center;
+}
+
+.flexbox .box4{
+	align-self: flex-end; 
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+	grid-template-rows: [y0] 50px [y1] 100px [y2] 100px [y3] 150px [y4];
+}
+
+.grid .box1{
+	grid-column: x0;
+	grid-row: y0;
+}
+
+.grid .box2{
+	grid-column: x1;
+	grid-row: y0;
+}
+
+.grid .box3{
+	grid-column: x2;
+	grid-row: y1;
+}
+
+.grid .box4{
+	grid-column: x3;
+	grid-row: y3;
+}
+
